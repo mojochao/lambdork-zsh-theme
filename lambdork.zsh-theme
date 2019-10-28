@@ -3,7 +3,7 @@
 # Requires https://github.com/jonmosco/kube-ps1.
 
 PROMPT='
-$(_user_host)${_current_dir} $(git_prompt_info) $(kube-ps1)
+$(_user_host)${_current_dir} $(kube-ps1) $(git_prompt_info)
 %{$fg[$CARETCOLOR]%}λ%{$resetcolor%} '
 
 PROMPT2='%{$fg[$CARETCOLOR]%}◀%{$reset_color%} '
