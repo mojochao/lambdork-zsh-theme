@@ -1,9 +1,17 @@
 # LAMBDORK ZSH Theme
+<<<<<<< HEAD
 # Personal tweaks to the most excellent AVIT theme.
 # Requires https://github.com/jonmosco/kube-ps1.
 
 PROMPT='
 $(_user_host)${_current_dir} $(kube-ps1) $(git_prompt_info)
+=======
+# Personal tweaks to the most excellent AVIT ZSH Theme.
+# Requires https://github.com/jonmosco/kube-ps1 to be installed and the aws plugin to be loaded.
+
+PROMPT='
+$(_user_host)${_current_dir}$(git_prompt_info) $(aws_prompt_info) $(kube_ps1)
+>>>>>>> Tweak prompt and remove ruby crap
 %{$fg[$CARETCOLOR]%}λ%{$resetcolor%} '
 
 PROMPT2='%{$fg[$CARETCOLOR]%}◀%{$reset_color%} '
